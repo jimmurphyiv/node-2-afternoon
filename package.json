@@ -19,5 +19,6 @@
   "homepage": "https://github.com/jimmurphyiv/node-2-afternoon#readme",
   "dependencies": {
     "express": "^4.17.1"
-  }
+  },
+  "devDependencies": {}
 }
