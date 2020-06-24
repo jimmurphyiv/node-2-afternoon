@@ -16,11 +16,11 @@ module.exports = {
 
     update: (req, res) => {
         const {text} = req.body;
-        const updateId = req.params.id;
-        const messageIndex = messages.findIndex(message => message.id == updateId);
+        const updateID = req.params.id;
+        const messageIndex = messages.findIndex(message => message.id == updateID);
         let message = messages[messageIndex];
 
-        message[messageIndex] = {
+        messages[messageIndex] = {
             id: message.id,
             text: text || message.text,
             time: message.time

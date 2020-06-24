@@ -6,10 +6,10 @@ const app = express();
 app.use(express.json());
 
 
-app.post('/api/messages',mc.create);
-app.get('/api/messages', mc.read)
-app.put('/api/messages/:id', mc.update);
-app.delete('/api/messages/:id', mc.delete);
+app.post(`/api/messages`,mc.create);
+app.get(`/api/messages`, mc.read)
+app.put(`/api/messages/:id`, mc.update);
+app.delete(`/api/messages/:id`, mc.delete);
 
 
 
